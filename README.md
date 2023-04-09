@@ -36,3 +36,13 @@ ALBRequestCountPerTarget - This is a predefined metric for target tracking scali
 Use ChangeMessageVisibility action to extend a message's visibility timeout
 
 
+# EBS 
+An EBS Volume in us-east-1a cannot be attached to us-east-1b
+To move a volume across, you first need to snapshot it
+EBS can be attached to only one instance at a time
+snapshot multiple AZ
+
+# S3
+Object Values are the content of the body:
+Max Size is 5TB
+If uploading more than 100MB , must use “multi-part upload
