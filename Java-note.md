@@ -24,3 +24,6 @@ But the data that the API wants is proof of data from multiple tables connected 
 # Khi dùng @Query annotation, bạn sử dụng dưới dạng native query hay hql/jpql?
 Khi dùng @Query annotation tôi hay sử dụng native query
 
+
+# Giải quyết bài toán n+1 trong Hibernate như thế nào?
+Tôi sẽ giải quyết bằng cách sử dụng  JOIN FETCH trong câu lệnh query của JPQL/HQL, và còn 1 cách nữa là sử dụng  @Fetch(FetchMode.SUBSELECT) với field của entity đó
