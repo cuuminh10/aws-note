@@ -21,3 +21,6 @@ Nhưng data mà api mong muốn là data chứng dữ liệu của các nhiều 
 Based on the context of the data required by the API, if it is a simple API that only works on one entity and has multiple conditions, I will use Hibernate's provide method.
 But the data that the API wants is proof of data from multiple tables connected together, and I will execute the native query through annotation @ Query.
 
+# Khi dùng @Query annotation, bạn sử dụng dưới dạng native query hay hql/jpql?
+Khi dùng @Query annotation tôi hay sử dụng native query
+
