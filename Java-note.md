@@ -8,7 +8,7 @@ Put is used to update objects.
 Patches are used to update fields in objects.
 
 # Compare between param and path variable ?
-Param and path pass do parameters through URLs
+The parameters and path variables are passed values through urls.
     The difference is : param will be passed after the question mark and declared along with the variable name.
                 Path variable: passed through parameters after splash
 
