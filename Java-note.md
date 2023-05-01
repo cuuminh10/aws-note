@@ -1,3 +1,8 @@
+# introduce about your sel?
+Hello everyone, my name is Minh Hoang, I have 5 years of experience, my strongest technology is Java with Spring framework, also I can do well with other backend languages ​​like nodejs and python, how about FE I can do well with ReactJS and AngularJS languages, the databases that I have worked on are PostgresSQL, Oracle, MySQL and I also have cloud knowledge AWS and Azure
+
+
+
 # What the different between Put and Patch ?
 Put is used to update objects.
 Patches are used to update fields in objects.
