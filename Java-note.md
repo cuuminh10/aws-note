@@ -27,3 +27,12 @@ Khi dùng @Query annotation tôi hay sử dụng native query
 
 # Giải quyết bài toán n+1 trong Hibernate như thế nào?
 Tôi sẽ giải quyết bằng cách sử dụng  JOIN FETCH trong câu lệnh query của JPQL/HQL, và còn 1 cách nữa là sử dụng  @Fetch(FetchMode.SUBSELECT) với field của entity đó
+
+# Khi viết unit test thì bạn viết cấu trúc ntn?
+Khi tôi viết Unittest tôi sẽ phải xác định mục đích mỗi case mình sẽ test, nếu tôi có các object có thể reused lại nhiều lần tôi sẽ sử dụng @beforeAll
+còn nếu với mỗi case tôi sẽ có 1 object khác nhau tôi sẽ sửng dụng beforeEach, và tương tự với nó tôi sẽ có @AfterAll, @AfterEach
+với mỗi case test tôi sẽ khai báo nói bằng @Test annotations.
+và trong mỗi case tôi sẽ so sánh gía trị trả về bằng phương thức assertEquals, nếu là boolean thì assertTrue
+
+# Khi viết unit test thì bạn có tiêu chí nào để đánh giá hiệu quả không? 
+tôi sẽ cover hết toàn bộ các line code của mình theo đúng bussiness, và coverrage ít nhất là 80% line code mà tôi đã sửa đổi cho services đó 
