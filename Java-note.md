@@ -23,10 +23,14 @@ But the data that the API wants is proof of data from multiple tables connected 
 
 # Khi dùng @Query annotation, bạn sử dụng dưới dạng native query hay hql/jpql?
 Khi dùng @Query annotation tôi hay sử dụng native query
-
+When using annotation @Query I usually use native query
 
 # Giải quyết bài toán n+1 trong Hibernate như thế nào?
-Tôi sẽ giải quyết bằng cách sử dụng  JOIN FETCH trong câu lệnh query của JPQL/HQL, và còn 1 cách nữa là sử dụng  @Fetch(FetchMode.SUBSELECT) với field của entity đó
+Tôi sẽ giải quyết bằng cách sử dụng  JOIN FETCH trong câu lệnh query của JPQL/HQL, 
+và còn 1 cách nữa là sử dụng  @Fetch(FetchMode.SUBSELECT) với field của entity đó
+
+I will solve by using JOIN FETCH JPQL/HQL query statement,
+and one more way is to use @Fetch(FetchMode.SUBSELECT) with the field of that entity
 
 # Khi viết unit test thì bạn viết cấu trúc ntn?
 Khi tôi viết Unittest tôi sẽ phải xác định mục đích mỗi case mình sẽ test, nếu tôi có các object có thể reused lại nhiều lần tôi sẽ sử dụng @beforeAll
@@ -34,5 +38,12 @@ còn nếu với mỗi case tôi sẽ có 1 object khác nhau tôi sẽ sửng d
 với mỗi case test tôi sẽ khai báo nói bằng @Test annotations.
 và trong mỗi case tôi sẽ so sánh gía trị trả về bằng phương thức assertEquals, nếu là boolean thì assertTrue
 
+When I write Unittest I will have to define the purpose of each case I will test, if I have objects that can be reused many times I will use @beforeAll
+but if for each case i will have a different object i will use beforeEach, and similar to it i will have @AfterAll, @AfterEach
+For each test case I will declare it with @Test annotations.
+and in each case i will compare the return value by assertEquals method, if it is boolean then assertTrue
+
 # Khi viết unit test thì bạn có tiêu chí nào để đánh giá hiệu quả không? 
 tôi sẽ cover hết toàn bộ các line code của mình theo đúng bussiness, và coverrage ít nhất là 80% line code mà tôi đã sửa đổi cho services đó 
+
+I will cover all my line coding arcoding to right bussiness, and coverrage at least is 80%  of the line code that i modifed to that services
