@@ -48,4 +48,12 @@ tôi sẽ cover hết toàn bộ các line code của mình theo đúng bussines
 
 I will cover all my line coding arcoding to right bussiness, and coverrage at least is 80%  of the line code that i modifed to that services
 
-7. Khi done 1 API thì làm sao để bạn bàn giao lại cho bên FE ? Theo cách thức như nào ?
+# Khi done 1 API thì làm sao để bạn bàn giao lại cho bên FE ? Theo cách thức như nào ?
+
+when i did an API i will start to write a document about Explain the detail of API including the header, method HTTP,  payload, and response model beside have any error status code if the request data from the client is invalid
+
+12. Khi bạn triển khai 1 project mà có sự thay đổi vào DB thì bạn làm như nào ?
+In that case, it will two solutions 
+first we can config in application flag that ddl-auto is an update for each change from the entity it  will map with database those changes and after that avoid missing those changes we must write a script sql in the package have name migration so that when DevOps they deploy will not miss those changes
+and the second if we won't ORM handle to those changes , we should set ddl-auto is none , and write script in package migration
+
