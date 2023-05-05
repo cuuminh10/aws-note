@@ -8,9 +8,9 @@ Put is used to update objects.
 Patches are used to update fields in objects.
 
 # Compare between param and path variable ?
-The parameters and path variables are passed values through urls.
-    The difference is : param will be passed after the question mark and declared along with the variable name.
-                Path variable: passed through parameters after splash
+The parameters and path variables are passed values through urls. 
+The difference is: the param will pass behind the question mark and declare along with the variable name. Path variable: passed through parameters after splash
+
 
 
 # Khi sử dụng JPA/Hibernate, bạn hay dùng các method được provide sẵn hay sử dụng @Query annotation?
