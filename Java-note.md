@@ -47,3 +47,5 @@ and in each case i will compare the return value by assertEquals method, if it i
 tôi sẽ cover hết toàn bộ các line code của mình theo đúng bussiness, và coverrage ít nhất là 80% line code mà tôi đã sửa đổi cho services đó 
 
 I will cover all my line coding arcoding to right bussiness, and coverrage at least is 80%  of the line code that i modifed to that services
+
+7. Khi done 1 API thì làm sao để bạn bàn giao lại cho bên FE ? Theo cách thức như nào ?
