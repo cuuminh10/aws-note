@@ -57,3 +57,7 @@ In that case, it will two solutions
 first we can config in application flag that ddl-auto is an update for each change from the entity it  will map with database those changes and after that avoid missing those changes we must write a script sql in the package have name migration so that when DevOps they deploy will not miss those changes
 and the second if we won't ORM handle to those changes , we should set ddl-auto is none , and write script in package migration
 
+# cấu trúc microservices
+My previous project microservice structure was to break down services into a separate module, and have a module called API gateway to manage routes to navigate to services, and a service would have its own database. it's him . To call overlap and reduce traffic at API gateway we will use event driven for services that frequently call each other data.
+
+
